@@ -1,0 +1,241 @@
+body {
+	background: #cccccc;
+}
+
+.stage {
+	width: 900px;
+	height: 556px;
+	margin: 100px auto;
+	background: #D8FFFC;
+	position: relative;
+}
+
+#triangle {
+	width: 0;
+	height: 0;
+	border-left: 75px solid transparent;
+	border-right: 75px solid transparent;
+	border-bottom: 150px solid yellow;
+	position: absolute;
+	top: 203px;
+	left: 60px;
+}
+
+#square {
+	width: 150px;
+	height: 150px;
+	background: red;
+	top: 203px;
+	left: 270px;
+	position: absolute;
+
+	/* uncomment to add keyframe animation */
+	/* animation: spin 2s infinite; */
+
+}
+
+#circle {
+	width: 150px;
+	height: 150px;
+	background: blue;
+	border-radius: 150px;
+	top: 203px;
+	left: 480px;
+	position: absolute;
+}
+
+#clip {
+	width: 150px;
+	height: 150px;
+	background: green;
+	clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+	top: 203px;
+	left: 690px;
+	position: absolute;
+
+	/* uncomment for css transitions */
+	/* transition: all 400ms ease; */
+}
+
+#oval {
+	width: 90px;
+	height: 30px;
+	background: blue;
+	-moz-border-radius: 100px / 50px;
+	-webkit-border-radius: 100px / 50px;
+	border-radius: 100px / 50px;
+
+
+}
+
+
+.flower {
+  width: 80px; height: 50px; background: #ffc30b; /* petals*/
+  	position: absolute;
+	top: 173px;
+	left: 80px;
+  border-radius: 90px 90px 50px 50px; 
+box-shadow: 
+            80px 0px 0 0px  #ffc30b; /* body */
+}
+.flower2 {
+  width: 50px; height: 80px; background:  #ffc30b; /* petals*/
+  	position: absolute;
+	top: 190px;
+	left: 135px;
+  border-radius: 90px 50px 90px 50px; 
+box-shadow: 
+            0px -60px 0 0px  #ffc30b; /* body */
+}
+.head{
+  width: 50px; height: 50px; background: radial-gradient( #FF4482, #FFC044); /* petals*/
+  	position: absolute;
+	top: 173px;
+	left: 135px;
+	border-radius: 50px 50px 50px 50px; 
+}
+.stem{
+ width: 10px; height: 200px; background: #39ff14; /* petals*/
+  	position: absolute;
+	top: 173px;
+	left: 160px;}
+
+
+/*other objects*/
+/*other objects*/
+/*other objects*/
+
+
+.pot{
+  width:150px; height: 150px; background: linear-gradient(to bottom,  red 60%, purple); 
+  	position: absolute;
+	top: 370px;
+	left: 110px;
+	border-radius: 90px 90px 90px 90px; 
+}
+.ball{
+	  width: 80px; height: 80px; background: linear-gradient(to bottom,  orange 60%, purple); 
+  	position: absolute;
+	top: 442px;
+	left: 200px;
+	border-radius: 50px 50px 50px 50px; }
+
+
+/*crane*/
+/*crane*/
+/*crane*/
+
+
+
+.cranebody{
+
+width: 10px;
+	height: 20px;
+	
+	border-left: 60px solid transparent;
+	border-right: 60px solid transparent;
+	border-bottom: 100px solid pink;
+		position: absolute;
+		top: 400px;
+	left:400px;
+}
+.craneleftwing{
+
+	width: 0;
+	height: 0;
+	border-top: 100px solid #FFCFFA;
+	border-left: 100px solid transparent;
+			position: absolute;
+		top: 415px;
+	left:390px;
+}
+
+.cranerightwing{
+
+	width: 0;
+	height: 0;
+	border-top: 100px solid #F6749F;
+	border-left: 100px solid transparent;
+			position: absolute;
+		top: 420px;
+	left:420px;
+}
+
+.craneneck{
+
+
+	width: 0;
+	height: 20px;
+	border-top: 90px solid pink;
+	border-right: 50px solid transparent;
+position: absolute;
+		top: 431px;
+	left:528px;
+}
+
+.cranehead{
+
+		width: 5px;
+	height: 0px;
+	border-top: 20px solid transparent;
+	border-left: 90px solid #FFCFFA;
+	border-bottom:30px solid transparent;
+	position: absolute;
+		top: 420px;
+	left:528px;
+}
+.cranetail{
+	width: 0;
+	height: 0;
+	border-top: 60px solid #F6749F;
+	border-left: 100px solid transparent;
+	position: absolute;
+		top: 435px;
+	left:320px;
+
+}
+
+}
+}
+
+}
+}
+		
+
+
+
+
+
+
+  /*background-color: currentColor;*/
+
+
+
+
+/* animations */
+
+/*
+#clip:hover {
+	transform: rotate(1200deg);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes move {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(100px);
+  }
+}
+
+*/
