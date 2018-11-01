@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Supertypeface</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="assets/css/gen.css" type="text/css" />
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>$(document).ready(function () {
+  var classes = ['rectangleg', 'square', 'triangle-leftg', 'half-circleg', 'smallgrid'],
+      counter = 0;
+
+  makeDiv();
+
+
+  function makeDiv() {
+      var numRand = Math.floor(Math.random() * 501);
+      var divsize = 5;
+      var posx = (Math.random() * ($('body').width() - divsize)).toFixed();
+      var posy = (Math.random() * ($('body').height() - divsize)).toFixed();
+      $newdiv = $("<div class='" + classes[counter] + "'></div>").css({
+          'left': posx + 'px',
+          'top': posy + 'px'
+      });
+      $newdiv.appendTo('body').delay(20).fadeIn(100, function () {
+          //$(this).remove();
+          makeDiv();
+      });
+
+      counter = counter < divsize -1 ? counter + 1 : 0;
+  }
+})</script>
+<body>
+
+
+
+<div class="grid">
+
+
+</div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

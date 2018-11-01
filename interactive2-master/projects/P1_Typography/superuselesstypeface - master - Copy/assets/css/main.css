@@ -1,0 +1,516 @@
+body {
+
+width: 100%;
+height: 4320px;
+
+}
+.letter {
+	width: 150px;
+	height: 200px;
+	position: relative;
+	display: inline-block;
+	margin: 10px;
+}
+
+
+/* pieces */
+
+.vertical {
+	width: 60px;
+	height: 100%;
+	background: red;
+	position: absolute;
+}
+
+.horizontal {
+	width: 100%;
+	height: 60px;
+	background: red;
+	position: absolute;
+}
+.half-circle {
+    width: 100px;
+    height: 50px;
+    background-color: transparent;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border: 30px solid black;
+    border-bottom: 0;
+      position:absolute;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+.half-circle2 {
+    width: 100px;
+    height: 50px;
+    background-color: transparent;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border: 30px solid black;
+    border-bottom: 0;
+  position: absolute;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    transform: rotate(-90deg)
+
+}
+
+.triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	border-top: 60px solid black;
+	position: absolute;
+}
+
+.triangle-left {
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-top: 25px solid transparent;
+	border-right: 50px solid black;
+	border-bottom: 25px solid transparent;
+}
+.triangle-left2 {
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-top: 25px solid transparent;
+	border-right: 50px solid black;
+	border-bottom: 25px solid transparent;
+}
+
+
+.square {
+	width: 30px;
+	height: 60px;
+	background: black;
+	position: absolute;
+
+}
+.square-2{
+	width: 30px;
+	height: 60px;
+	background: black;
+	position: absolute;
+
+}
+.square-3{
+	width: 30px;
+	height: 60px;
+	background: black;
+	position: absolute;
+
+}
+.square-4{
+	width: 30px;
+	height: 60px;
+	background: black;
+	position: absolute;
+
+}
+.square-5{
+	width: 30px;
+	height: 60px;
+	background: black;
+	position: absolute;
+
+}
+
+.rectangle{
+	width: 30px;
+	height: 120px;
+	background: black;
+	position: absolute;
+
+}
+
+
+
+/*Letterform*/
+
+
+/* A */
+#a .half-circle {
+left:15px;
+}
+
+#a .triangle-down{
+
+	top:60px;
+}
+#a .square{
+	left:85px;
+	top:60px;
+
+}
+
+
+
+/*B*/
+#b .rectangle{
+
+}
+
+#b .triangle-down{
+top:60px;
+left:40px;
+
+}
+
+
+
+/*C*/
+
+#c .half-circle2{
+	top:55px;
+	left:-40px;
+}
+
+#c .triangle-left{
+	top:15px;
+	left:40px;
+}
+#c .triangle-left2{
+	top:90px;
+	left:40px;}
+
+
+/*D*/
+
+#d .rectangle{
+	left:40px;
+
+}
+
+#d .triangle-down{
+top:60px;
+left:-25px;}
+
+/*E*/
+
+#e .half-circle {
+	top:80px;
+	transform: rotate(180deg)
+}
+
+#e .triangle-left{
+	top:20px;}
+
+/*F*/
+
+#f .half-circle {
+left:0px;}
+
+#f .square {
+top:80px;
+
+}
+
+#f .triangle-left{
+	top:60px;
+	left:50px;
+}
+
+/*G*/
+
+#g .triangle-down{
+	left:10px;
+}
+#g .square {
+top:40px;
+left:70px;
+}
+#g .half-circle {
+	left:0px;
+	top:110px;
+	transform: rotate(180deg)
+}
+/*H*/
+
+#h .rectangle{
+
+}
+#h .half-circle {
+	left:40px;
+	top:40px;
+}
+/*I*/
+
+#i .square {
+top:60px;
+left:40px;
+}
+
+/*j*/
+#j .square {
+top:40px;
+left:50px;
+}
+#j .half-circle {
+	left:-20px;
+	top:110px;
+	transform: rotate(180deg)
+}
+
+/*k*/
+#k .rectangle{
+}
+#k .triangle-left{
+	top:60px;
+	left:40px;
+}
+
+/*l*/
+
+#l .rectangle{
+left:40px;}
+
+/*m*/
+#m .square
+ {
+top:60px;
+
+}
+#m .square-2{
+	top:60px;
+	left:75px;
+
+}
+#m .square-3{
+	top:60px;
+	left:110px;
+
+}
+#m .square-4{
+	top:60px;
+	left:180px;
+}
+
+#m .half-circle{
+
+
+}
+#m .half-circle2{
+transform: rotate(360deg);
+left:110px;}
+
+/*n*/
+
+#n .square
+ {
+top:60px;
+
+}
+#n .square-2{
+	top:60px;
+	left:70px;}
+
+#n .half-circle{
+}
+
+/*o*/
+
+#o .half-circle{
+}
+
+#o .half-circle2{
+top: 80px;
+transform: rotate(180deg);
+}
+
+/*p*/
+#p .rectangle
+{top: 0px;
+	left:00px;
+}
+
+#p .triangle-down
+{
+transform: rotate(-90deg);
+left: 40px;
+top: 0px;
+}
+
+/*q*/
+
+#q .rectangle
+{top: 60px;
+	left:70px;
+}
+
+#q .triangle-down
+{transform: rotate(-270deg);
+left: 0px;
+top: 60px;
+}
+
+/*r*/
+
+#r .halfcircle{
+}
+
+#r .square{
+top: 60px
+}
+
+/*s*/
+
+#s .triangle-down{}
+#s .triangle-down{
+
+transform: rotate(-270deg);
+left:50px
+}
+
+#s .triangle-left{
+	top: 20px;
+}
+
+#s .triangle-left2{
+
+	transform: rotate(180deg);
+	top:20px;
+}
+
+#s .half-circle{
+	top:80px;
+transform: rotate(180deg)
+}
+
+/*t*/
+
+#t .rectangle{
+	left: 60px;
+}
+
+#t .triangle-left{
+top:20px;
+transform: rotate(270deg);
+}
+
+#t .triangle-left2{
+top:20px;
+left:100px;
+transform: rotate(270deg);
+}
+
+/*u*/
+#u .square
+ {
+top:;
+
+}
+#u .square-2{
+	top:;
+	left:70px;}
+
+#u .half-circle{
+	top: 80px;
+transform: rotate(180deg);
+}
+
+/*v*/
+#v .square
+ {
+top:;
+
+}
+#v .square-2{
+	top:;
+	left:70px;}
+
+#v .triangle-left{
+	transform: rotate(-90deg);
+	top: 80px;
+	left:25px;
+
+
+}
+
+/*w*/
+#w .square
+ {
+top:0px;
+
+}
+#w .square-2{
+	top:0px;
+	left:75px;
+
+}
+#w .square-3{
+	top:0px;
+	left:110px;
+
+}
+#w .square-4{
+	top:0px;
+	left:180px;
+}
+
+#w .half-circle{
+	top:80px;
+transform: rotate(-180deg);
+
+}
+#w .half-circle2{
+top:80px;
+left:110px;
+transform: rotate(-180deg);}
+
+/*x*/
+
+#x .triangle-left{
+left: 5px;
+transform: rotate(-90deg);
+
+
+}
+#x .triangle-down{
+	top: 60px;
+transform: rotate(-180deg);
+
+}
+
+/*graphics*/
+
+
+.grid
+{
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  height: 100vh;
+
+  background: white;
+  background-image: linear-gradient(black, black, black .1em, transparent .1em), linear-gradient(90deg, black
+   .1em, transparent .1em);
+  background-size: 3em 3em;
+}
+
+.boxes {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+}
+.exploding {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+}
+
+.test {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+}

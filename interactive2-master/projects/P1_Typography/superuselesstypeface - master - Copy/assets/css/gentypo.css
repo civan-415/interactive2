@@ -1,0 +1,808 @@
+body {
+
+
+}
+.letter {
+	width: 150px;
+	height: 200px;
+	position: relative;
+	display: inline-block;
+	margin: 10px;
+}
+
+.letterw {
+	width: 280px;
+	height: 200px;
+	position: relative;
+	display: inline-block;
+	margin: 10px;
+}
+
+/* pieces */
+
+.vertical {
+	width: 500px;
+	height: 900px;
+	background:black;
+	position: absolute;
+}
+
+.horizontal {
+	width: 100px;
+	height: 60px;
+	background: black;
+	position: absolute;
+}
+.half-circle {
+    width: 100px;
+    height:50px;
+    background-color: transparent;
+    border-top-left-radius: 100px;
+    border-top-right-radius:100px;
+    border:30px solid black;
+    border-bottom: 0;
+      position:absolute;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+.half-circle2 {
+    width: 100px;
+    height: 50px;
+    background-color: transparent;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border: 30px solid black;
+    border-bottom: 0;
+  position: absolute;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    transform: rotate(-90deg)
+
+}
+
+.triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	border-top: 60px solid black;
+	position: absolute;
+}
+
+.triangle-left {
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-top: 25px solid transparent;
+	border-right: 50px solid black;
+	border-bottom: 25px solid transparent;
+}
+.triangle-left2 {
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-top: 25px solid transparent;
+	border-right: 50px solid black;
+	border-bottom: 25px solid transparent;
+}
+
+
+.square {
+	width: 30px;
+	height: 60px;
+	background: black;
+	position: absolute;
+
+}
+.square-2{
+	width: 30px;
+	height: 60px;
+	background: black;
+	position: absolute;
+
+}
+.square-3{
+	width: 30px;
+	height: 60px;
+	background: black;
+	position: absolute;
+
+}
+.square-4{
+	width: 30px;
+	height: 60px;
+	background: black;
+	position: absolute;
+
+}
+.square-5{
+	width: 30px;
+	height: 60px;
+	background: black;
+	position: absolute;
+
+}
+
+.rectangle{
+	width: 30px;
+	height: 120px;
+	background: black;
+	position: absolute;
+
+}
+
+
+
+/*Letterform*/
+
+
+/* A */
+#a .half-circle {
+left:15px;
+}
+
+#a .triangle-down{
+
+	top:60px;
+}
+#a .square{
+	left:85px;
+	top:60px;
+
+}
+
+
+
+/*B*/
+#b .rectangle{
+
+}
+
+#b .triangle-down{
+top:60px;
+left:40px;
+
+}
+
+
+
+/*C*/
+
+#c .half-circle2{
+	top:55px;
+	left:-40px;
+}
+
+#c .triangle-left{
+	top:15px;
+	left:40px;
+}
+#c .triangle-left2{
+	top:90px;
+	left:40px;}
+
+
+/*D*/
+
+#d .rectangle{
+	left:40px;
+
+}
+
+#d .triangle-down{
+top:60px;
+left:-25px;}
+
+/*E*/
+
+#e .half-circle {
+	top:80px;
+	transform: rotate(180deg)
+}
+
+#e .triangle-left{
+	top:20px;}
+
+/*F*/
+
+#f .half-circle {
+left:0px;}
+
+#f .square {
+top:80px;
+
+}
+
+#f .triangle-left{
+	top:60px;
+	left:50px;
+}
+
+/*G*/
+
+#g .triangle-down{
+	left:10px;
+}
+#g .square {
+top:40px;
+left:70px;
+}
+#g .half-circle {
+	left:0px;
+	top:110px;
+	transform: rotate(180deg)
+}
+/*H*/
+
+#h .rectangle{
+
+}
+#h .half-circle {
+	left:40px;
+	top:40px;
+}
+/*I*/
+
+#i .square {
+top:60px;
+left:40px;
+}
+
+/*j*/
+#j .square {
+top:40px;
+left:50px;
+}
+#j .half-circle {
+	left:-20px;
+	top:110px;
+	transform: rotate(180deg)
+}
+
+/*k*/
+#k .rectangle{
+}
+#k .triangle-left{
+	top:60px;
+	left:40px;
+}
+
+/*l*/
+
+#l .rectangle{
+left:40px;}
+
+/*m*/
+#m .square
+ {
+top:60px;
+
+}
+#m .square-2{
+	top:60px;
+	left:75px;
+
+}
+#m .square-3{
+	top:60px;
+	left:110px;
+
+}
+#m .square-4{
+	top:60px;
+	left:180px;
+}
+
+#m .half-circle{
+
+
+}
+#m .half-circle2{
+transform: rotate(360deg);
+left:110px;}
+
+/*n*/
+
+#n .square
+ {
+top:60px;
+
+}
+#n .square-2{
+	top:60px;
+	left:70px;}
+
+#n .half-circle{
+}
+
+/*o*/
+
+#o .half-circle{
+}
+
+#o .half-circle2{
+top: 80px;
+transform: rotate(180deg);
+}
+
+/*p*/
+#p .rectangle
+{top: 0px;
+	left:00px;
+}
+
+#p .triangle-down
+{
+transform: rotate(-90deg);
+left: 40px;
+top: 0px;
+}
+
+/*q*/
+
+#q .rectangle
+{top: 60px;
+	left:70px;
+}
+
+#q .triangle-down
+{transform: rotate(-270deg);
+left: 0px;
+top: 60px;
+}
+
+/*r*/
+
+#r .halfcircle{
+}
+
+#r .square{
+top: 60px
+}
+
+/*s*/
+
+#s .triangle-down{}
+#s .triangle-down{
+
+transform: rotate(-270deg);
+left:50px
+}
+
+#s .triangle-left{
+	top: 20px;
+}
+
+#s .triangle-left2{
+
+	transform: rotate(180deg);
+	top:20px;
+}
+
+#s .half-circle{
+	top:80px;
+transform: rotate(180deg)
+}
+
+/*t*/
+
+#t .rectangle{
+	left: 60px;
+}
+
+#t .triangle-left{
+top:20px;
+transform: rotate(270deg);
+}
+
+#t .triangle-left2{
+top:20px;
+left:100px;
+transform: rotate(270deg);
+}
+
+
+
+/*u*/
+#u .square
+ {
+top:;
+
+}
+#u .square-2{
+	top:;
+	left:70px;}
+
+#u .half-circle{
+	top: 80px;
+transform: rotate(180deg);
+}
+
+/*v*/
+#v .square
+ {
+top:;
+
+}
+#v .square-2{
+	top:;
+	left:70px;}
+
+#v .triangle-left{
+	transform: rotate(-90deg);
+	top: 80px;
+	left:25px;
+
+
+}
+
+/*w*/
+#w .square
+ {
+top:0px;
+
+}
+#w .square-2{
+	top:0px;
+	left:75px;
+
+}
+#w .square-3{
+	top:0px;
+	left:110px;
+
+}
+#w .square-4{
+	top:0px;
+	left:180px;
+}
+
+#w .half-circle{
+	top:80px;
+transform: rotate(-180deg);
+
+}
+#w .half-circle2{
+top:80px;
+left:110px;
+transform: rotate(-180deg);}
+
+/*x*/
+
+#x .half-circle{
+top:80px;
+
+}
+#x .half-circle2{
+transform: rotate(-180deg);
+top:0px;
+
+}
+/*y*/
+
+#y .triangle-down {
+top:10px;
+left:35px;
+}
+#y .half-circle {
+	left:-20px;
+	top:90px;
+	transform: rotate(180deg)
+}
+
+/*z*/
+
+#z .triangle-left2{
+	top: 0px;
+	transform: rotate(180deg);
+}
+#z .triangle-down{
+
+transform: rotate(-270deg);
+top: 80px;
+left:80px;
+}
+#z .square{
+top: 50px;
+left:40px;
+}
+
+/*graphics*/
+
+/*containment*/
+
+.div{
+height:300px;
+width:200px;
+
+}
+.container{
+width: 1000px;
+height: 250px;
+}
+
+.speciman{
+	position: absolute;
+top:4800px;
+width: auto;
+margin:500px;
+height: 1000px;
+}
+
+.gentype{
+position: absolute;
+top:200px;
+width: 600px;
+margin:500px;
+height: 1000px;
+}
+
+.we{
+width: 500px;
+height: 250px;
+position: absolute;
+top: 1600px;
+left:400px;
+}
+
+.dont{
+width: 900px;
+height: 250px;
+position: absolute;
+top: 1900px;
+left:600px;
+}
+
+.need{
+width: 900px;
+height: 250px;
+position: absolute;
+top: 2200px;
+left:800px;
+}
+
+.another{
+width: 1500px;
+height: 250px;
+position: absolute;
+top: 2900px;
+left:200px;
+}
+
+.typeface{
+width: 1500px;
+height: 250px;
+position: absolute;
+top: 4300px;
+left:50px;
+}
+
+.pieces{
+width: 1500px;
+height: 250px;
+position: absolute;
+top: 5000px;
+left:600px;
+}
+
+.smallgrid
+{
+  margin: auto;
+  padding-right: 37px;
+	  padding-bottom:15px;
+  position: absolute;
+	top:250px;
+	left:1000px;
+  width: 300px;
+  height: 900px;
+ overflow: hidden;
+  background: white;
+  background-image: linear-gradient(black, black, black .1em, transparent .1em), linear-gradient(90deg, black
+   .1em, transparent .1em);
+  background-size: 3em 3em;
+	display: block;
+}
+
+/*boxgrids*/
+.boxgrids
+{
+  margin: auto;
+  padding-right: 30px;
+	  padding-bottom:30px;
+  position: absolute;
+	top:2300px;
+	left:500px;
+  width: 500px;
+  height: 500px;
+ overflow: hidden;
+  background: white;
+  background-image: linear-gradient(black, black, black .1em, transparent .1em), linear-gradient(90deg, black
+   .1em, transparent .1em);
+  background-size: 3em 3em;
+	display: block;
+}
+
+.halfcirclebox{
+width: 600px;
+height:1200px;
+
+}
+
+/*boxgrids*/
+.boxgrids1
+{
+  margin: auto;
+  padding-right: 30px;
+	  padding-bottom:30px;
+  position: absolute;
+	top:2370px;
+	left:660px;
+  width: 500px;
+  height: 500px;
+ overflow: hidden;
+  background: white;
+  background-image: linear-gradient(black, black, black .1em, transparent .1em), linear-gradient(90deg, black
+   .1em, transparent .1em);
+  background-size: 3em 3em;
+	display: block;
+}
+
+
+.boxgrids2
+{
+  margin: auto;
+  padding-right: 30px;
+	  padding-bottom:30px;
+  position: absolute;
+	top:2450px;
+	left:820px;
+  width: 500px;
+  height: 500px;
+ overflow: hidden;
+  background: white;
+  background-image: linear-gradient(black, black, black .1em, transparent .1em), linear-gradient(90deg, black
+   .1em, transparent .1em);
+  background-size: 3em 3em;
+	display: block;
+}
+
+.halfcirclebox{
+width: 600px;
+height:1200px;
+
+}
+
+.try{
+width: 600px;
+height:150px;
+position: absolute;
+top: 4500px;
+border: solid 2px;
+border-color: black;
+}
+
+
+/*graphic pieces*/
+.halfcirclel {
+    width: 500px;
+    height:250px;
+    background-color: transparent;
+    border-top-left-radius: 500px;
+    border-top-right-radius:500px;
+    border:140px solid black;
+    border-bottom: 0;
+      position:absolute;
+-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.halfcirclelu {
+    width: 500px;
+    height:250px;
+    background-color: transparent;
+    border-top-left-radius: 500px;
+    border-top-right-radius:500px;
+    border:140px solid black;
+    border-bottom: 0;
+      position:absolute;
+-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+			transform: rotate(180deg);
+}
+
+.triangle-leftx {
+	width: 0;
+	height: 0;
+	position: absolute;
+	left:1400px;
+	border-top: 25px solid transparent;
+	border-right: 50px solid black;
+	border-bottom: 25px solid transparent;
+
+}
+
+.triangle-leftxx {
+	width: 0;
+	height: 0;
+	position: absolute;
+	top:300px;
+	left:1400px;
+	border-top: 25px solid transparent;
+	border-right: 50px solid black;
+	border-bottom: 25px solid transparent;
+}
+
+.triangle-leftxxx {
+	width: 0;
+	height: 0;
+	position: absolute;
+	top:380px;
+	left:1400px;
+	border-top: 25px solid transparent;
+	border-right: 50px solid black;
+	border-bottom: 25px solid transparent;
+}
+
+/*giant t*/
+.verticalt {
+	width: 50px;
+	height: 900px;
+	background:black;
+	position: absolute;
+	top:3200px;
+	left: 580px;
+}
+.triangle-leftg1 {
+	width: 0;
+	height: 0;
+	position: absolute;
+	top:4800px;
+	left:900px;
+	border-top: 25px solid transparent;
+	border-right: 50px solid black;
+	border-bottom: 25px solid transparent;
+}
+
+
+
+
+}
+
+}
+
+
+/*halfcircle*/
+#firstbigcircle .halfcirclel
+{
+
+
+}
+#firstbigcircle .halfcirclelu
+{
+top: 1200px;
+
+
+}
+
+/*testkit*/
+.box1 {
+	width: 50px;
+	height: 60px;
+	background-color: black:
+	position: absolute;
+
+}
+.parent_div {
+	width: 500px;
+	height: 600px;
+	background-color: black:
+	position: absolute;
+
+
+}
