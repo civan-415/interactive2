@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>we're watching</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="assets/css/main.css" type="text/css" />
+	<link rel="icon" href="assets/image/dot.png">
+<!--" Sometimes, however, the best way to hide something is not hiding at all. Or, sometimes, one can provide misleading information to conceal the very fact that something is hidden. Therefore, the art of surveillance and control is how to manage the visible and the invisible; it is a game of revealing and hiding, knowledge and deception. If there is something like the existing regime of surveillance, it must be based on a certain relationship between two terms. To subvert it and win the game, one should be able to understand the relationship and play upon it... " - Min Choi-->
+</head>
+
+<body>
+	<div id="IP_Address"></div>
+	<div id="Country"></div>
+	<div id="City"></div>
+		<div id="Org"></div>
+<div id="log"></div>
+
+	<div id="iframe">
+		<div class="blank">
+	    <canvas id="canvas" width="1000px" height="1000px"></canvas>
+			<!-- <div class="clickaddition"></div> -->
+			<div id="face">
+				<div class="left eye">
+					<div class="pupil"></div>
+				</div>
+				<div class="right eye">
+					<div class="pupil"></div>
+		</div>
+</div>
+</body>
+
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/eyes.js"></script>
+
+<!--Mouse Track-->
+<script>
+$( document ).on( "mousemove", function( event ) {
+  $( "#log" ).text( "X: " + event.pageX + ", Y: " + event.pageY );
+});
+</script>
+
+<!--title in bar of the browser-->
+<script language=javascript>
+	var title = new MovingTitle(" Sometimes, however, the best way to hide something is not hiding at all. Or, sometimes, one can provide misleading information to conceal the very fact that something is hidden. Therefore, the art of surveillance and control is how to manage the visible and the invisible; it is a game of revealing and hiding, knowledge and deception. If there is something like the existing regime of surveillance, it must be based on a certain relationship between two terms. To subvert it and win the game, one should be able to understand the relationship and play upon it... ", 110, 50);
+	title.init();
+			function MovingTitle(writeText, interval, visibleLetters) {
+				var _instance = {};
+				var _currId = 0;
+				var _numberOfLetters = writeText.length;
+				function updateTitle() {
+					_currId += 1;
+					if (_currId > _numberOfLetters - 1) {
+						_currId = 0;
+					}
+					var startId = _currId;
+					var endId = startId + visibleLetters;
+					var finalText;
+					if (endId < _numberOfLetters - 1) {
+						finalText = writeText.substring(startId, endId);
+					} else {
+						var cappedEndId = _numberOfLetters;
+						endId = endId - cappedEndId;
+						finalText = writeText.substring(startId, cappedEndId) + writeText.substring(0, endId);
+					}
+					document.title = finalText;
+				}
+				_instance.init = function() {
+					setInterval(updateTitle, interval);
+				};
+				return _instance;
+			}
+		</script>
+<!--Made in San Francisco with love from all over the world. Thanks to everyone that helped. A website by Elizabeth See & Ivan Chen.-->
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Supertypeface</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="assets/css/create.css" type="text/css" />
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>$(document).ready(function () {
+	for (var i = 0; i < 1; i++)
+
+	{
+	  $('.main').append('<div class="half-circle"></div>');
+	}
+	$( '.half-circle' ).each(function( index ) {
+	  $(this).css({
+	    left : Math.random() * ($('.main').width() - $(this).width()),
+	    top : Math.random() * ($('.main').height() - $(this).height())
+	  });
+	});
+})</script>
+
+<script>$(document).ready(function () {
+	for (var i = 0; i < 1; i++)
+
+	{
+	  $('.main').append('<div class="triangle-down"></div>');
+	}
+	$( '.triangle-down' ).each(function( index ) {
+	  $(this).css({
+	    left : Math.random() * ($('.main').width() - $(this).width()),
+	    top : Math.random() * ($('.main').height() - $(this).height())
+	  });
+	});
+})</script>
+<script>$(document).ready(function () {
+	for (var i = 0; i < 2; i++)
+
+	{
+	  $('.main').append('<div class="square"></div>');
+	}
+	$( '.square' ).each(function( index ) {
+	  $(this).css({
+	    left : Math.random() * ($('.main').width() - $(this).width()),
+	    top : Math.random() * ($('.main').height() - $(this).height())
+	  });
+	});
+})</script>
+
+<script>$(document).ready(function () {
+	for (var i = 0; i < 2; i++)
+
+	{
+	  $('.main').append('<div class="rectangle"></div>');
+	}
+	$( '.rectangle' ).each(function( index ) {
+	  $(this).css({
+	    left : Math.random() * ($('.main').width() - $(this).width()),
+	    top : Math.random() * ($('.main').height() - $(this).height())
+	  });
+	});
+})</script>
+
+<body>
+
+
+<div class="main"></div>
+
+<a style="display:block" href="gentype.html">
+
+<div class="refresh"></p></div>
+</a>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
