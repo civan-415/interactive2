@@ -1,0 +1,222 @@
+/* reset padding and margins */
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: 'Lekton', sans-serif;
+}
+
+/* container */
+
+.container {
+	position: relative;
+}
+
+/* items */
+
+.item {
+	height: 250px;
+	width: 250px;
+	background: black;
+	color: white;
+	margin: 0px;
+	padding: 10px;
+	box-sizing: border-box;
+	float: left;
+	transition: all 500ms ease;
+
+	cursor: pointer;
+}
+
+/* example button 1 */
+#button-1 {
+	background: pink;
+}
+
+#button-1:hover {
+	transform: rotate(270deg) scale(6.5);
+
+}
+
+#button-1:active {
+	background: pink;
+	opacity: 1;
+}
+
+/* example button 2 */
+
+#button-2::after {
+
+	color: white;
+}
+
+#button-2:hover::after {
+	content: 'Be warned.';
+	color: white;
+	font-size: 32px;
+}
+
+/* example button 3 is changed only via js */
+
+/* example button 4 */
+#button-4.gradient-background {
+	background-color: blue;
+	color: transparent;
+}
+
+/* example button 5 */
+#button-5{
+	background-color: blue;
+
+}
+
+.circle {
+	border-radius: 125px;
+background:pink;
+}
+
+/* example button 6 */
+#button-6:active {
+background: blue;
+
+
+}
+#button-8{
+background:orange;
+}
+#button-10{
+
+
+}
+.bigiftrue {
+	width:950px;
+	transition: all 2s ease;
+	background: blue;
+}
+
+
+#button-11{
+background-color: blue;
+
+}
+
+#button-13{
+background-color: pink;
+
+}
+
+.boxer {
+	width:55px;
+
+	background: blue;
+}
+
+#button-13{
+background-color: pink;
+
+}
+#button-14:hover {
+    -webkit-animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+    from {-webkit-transform: rotate(0deg);}
+    to   {-webkit-transform: rotate(359deg);}
+}
+
+#button-15:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+#button-16:hover {
+	transform: scale(6);
+	transition: all 20s ease;
+	opacity: .3;
+	border-radius: 125px;
+ 	background: pink;
+}
+#button-17:hover {
+	transform: rotate(360deg) scale(2.5);
+	transition: all 60s ease;
+}
+
+#button-18:hover {
+	-webkit-animation-name: example;
+	-webkit-animation-duration: 4s;
+	animation-name: example;
+	animation-duration: 4s;
+}
+
+
+@keyframes example {
+	from {background-color:orange;}
+	to {background-color:  blue;}
+}
+#button-19{
+	position: relative;
+   animation-name: example;
+     animation-duration: 5s;
+     animation-timing-function: linear;
+     animation-delay: 2s;
+     animation-iteration-count: infinite;
+     animation-direction: alternate;
+
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+}
+#button-20:hover{
+	transform: scale(300);
+	    transition: all .1s repeat;
+opacity: .3;
+	border-radius: 25px;
+ 	background: black;
+}
+
+#button-21:active {
+	border-radius: 125px;
+	background-color: blue;
+	width: 200px;
+}
+#button-22{
+background: pink;
+}
+#button-22:active {
+	animation: shake 1.1s;
+	animation-iteration-count: infinite;
+	background: blue;
+}
+#button-23:active {
+	background: white;
+}
+#button-24:hover {
+    transform: scale(1.5);
+	}

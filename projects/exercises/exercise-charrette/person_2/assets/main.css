@@ -1,0 +1,425 @@
+/* reset padding and margins */
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: 'Lekton', sans-serif;
+}
+
+/* container */
+
+.container {
+	position: relative;
+}
+
+/* items */
+
+.item {
+	height: 250px;
+	width: 250px;
+	background: black;
+	color: blue;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	float: left;
+	transition: all 500ms ease;
+
+	cursor: pointer;
+}
+
+/* example button 1 */
+#button-26 {
+	background: pink;
+}
+
+#button-26:hover {
+	transform: rotate(90deg) scale(1.5);
+	background: blue;
+	color: pink;
+	padding: 50px;
+}
+
+#button-26:hover::after {
+	content: 'Click';
+	color: red;
+}
+
+#button-26:active {
+	background: red;
+	opacity: 1;
+	transform: rotate(-180deg) scale(.5);
+	border-radius: 250px;
+}
+
+/* example button 2 */
+
+
+#button-27::after {
+	content: 'aaaaa..';
+	color: white;
+}
+
+
+/* #button-2:hover::after {
+	content: 'AAAAAAAAAAAA!!!!';
+	color: red;
+	font-size: 20px;
+} */
+
+#button-27:hover {
+	font-size: 30px;
+}
+
+
+
+/* example button 3 is changed only via js */
+
+#button-28::after {
+	content: 'aa';
+	color: white;
+}
+
+#button-28 {
+	content: 'aa';
+	color: white;
+	background: blue;
+}
+
+#button-28:hover::after {
+	content: 'AAAAAAA!!';
+	color: red;
+	font-size: 50px;
+}
+
+#button-28:hover {
+	animation: shake 0.5s;
+	animation-iteration-count: infinite;
+	background: orange;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/* example button 4 */
+
+#button-29 {
+	background: orange;
+}
+
+#button-29.gradient-background {
+	background: radial-gradient(blue, orange);
+	color: transparent;
+}
+
+/* example button 5 */
+.circle {
+	border-radius: 125px;
+	background: blue;
+	transform: scale(.2);
+}
+
+#button-30:hover {
+	content: 'bye';
+	color: white;
+	background: red;
+}
+
+#button-30 {
+	background: blue;
+	color: white;
+}
+
+/* example button 6 */
+#button-31{
+	transition: none;
+	background: pink;
+}
+
+#button-32:hover {
+	transform: scale(3);
+	opacity: .4;
+	border-radius: 125px;
+ 	background: red;
+}
+
+#button-33{
+	background: white;
+}
+
+#button-33::after{
+	content: 'uhh.. uuuuhhh';
+}
+
+#button-33:hover{
+	background: black;
+	opacity: .6;
+}
+
+.imgnoface {
+	opacity: 0;
+}
+
+.imgnoface:hover {
+	opacity: .5;
+	transform: scale(.5);
+}
+
+#button-34{
+	background: orange;
+}
+
+#button-34:hover {
+	border-radius: 30px;
+}
+
+#button-34:hover::after {
+	content: 'tap tap tap';
+}
+
+#button-34:active {
+	border-radius: 150px;
+	background-color: red;
+	width: 500px;
+}
+
+#button-35{
+	background: pink;
+}
+
+.tol {
+	height: 750px;
+	transition: all 500ms ease;
+	border-radius: 100px;
+}
+
+.large {
+	width: 500px;
+	height: 500px;
+	background: red;
+}
+
+#button-36 {
+	animation: shake 1s;
+	animation-iteration-count: infinite;
+	background: white;
+}
+
+#button-36:hover {
+	animation: shake 0.5s;
+	animation-iteration-count: infinite;
+	background: orange;
+}
+
+#button-36:active {
+	animation: shake 0.1s;
+	animation-iteration-count: infinite;
+	background: red;
+}
+
+#button-37 {
+	background: black;
+}
+
+#button-37:active::after {
+	background: pink;
+	content: 'pst.. hi';
+}
+
+#button-38:hover {
+	background: orange;
+	transform: rotate(70deg);
+	opacity: .4;
+}
+
+#button-39 {
+	background: blue;
+	color: white;
+}
+
+.img01 {
+	opacity: 0;
+}
+
+.img01:hover {
+	opacity: 1;
+	transform: scale(2);
+}
+
+#button-40 {
+	background: pink;
+}
+
+#button-41 {
+	background: black;
+}
+
+#button-41:active {
+	animation: scale 0.9s;
+	animation-iteration-count: infinite;
+	background: red;
+}
+
+#button-41:active::after {
+	content: 'wub wub.. wub wub.'
+}
+
+@keyframes scale {
+    0% { transform: scale(.9); }
+    10% { transform: scale(.6); }
+    20% { transform: scale(1.3); }
+    30% { transform: scale(.8); }
+    40% { transform: scale(1); }
+    50% { transform: scale(.9); }
+    60% { transform: scale(.8); }
+    70% { transform: scale(1); }
+    80% { transform: scale(1.2); }
+    90% { transform: scale(1.3); }
+    100% { transform: scale(1); }
+}
+
+#button-42 {
+	background: orange;
+}
+
+#button-42:active {
+	animation: colourchange 2s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes colourchange {
+    0% { background: pink; }
+    10% { background: black; }
+    20% { background: blue; }
+    30% { background: orange; }
+    40% { background: red; }
+    50% { background: pink; }
+    60% { background: white; }
+    70% { background: blue; }
+    80% { background: red; }
+    90% { background: black; }
+    100% { background: orange; }
+}
+
+#button-43 {
+	background: white;
+}
+
+.tol2 {
+	height: 500px;
+	transition: all 300ms ease;
+	width: 10px;
+}
+
+#button-44 {
+	background: pink;
+}
+
+.spinyspin {
+	animation: spin 2s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+    0% { border-radius: 60px; transform: rotate(72deg); background: pink;}
+    25% { border-radius: 150px; transform: rotate(144deg); background: red;}
+    50% { border-radius: 90px; transform: rotate(270deg); background: pink;}
+    75% { border-radius: 40px; transform: rotate(216deg); background: red;}
+    100% { border-radius: 70px; transform: rotate(0deg); background: pink;}
+}
+
+#button-45 {
+
+}
+
+.extratol {
+	height: 750px;
+	transition: all 5s ease;
+	background: red;
+}
+
+#button-46 {
+
+}
+
+.citrus {
+	border-radius: 150px;
+	background: orange;
+}
+
+#button-47 {
+	width: 250px;
+	top: 250px;
+}
+
+.jumper {
+	animation: jump 1.5s;
+	animation-iteration-count: infinite;
+	background: blue;
+	color: white;
+}
+
+@keyframes jump {
+    0% { transform: translate(0px, 3px); }
+    10% { transform: translate(0px, -10px); }
+    20% { transform: translate(0px, 6px); }
+    30% { transform: translate(0px, -20px); }
+    40% { transform: translate(0px, 9px); }
+    50% { transform: translate(0px, -30px); }
+    60% { transform: translate(0px, 12px); }
+    70% { transform: translate(0px, -40px); }
+    80% { transform: translate(0px, 15px); }
+    90% { transform: translate(0px, -50px); }
+    100% { transform: translate(0px, 0px); }
+}
+
+.warping {
+	animation: warp 1s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes warp {
+    0% { transform: translate(0px, -0px); background: pink;}
+    25% { transform: translate(425px, 45px); background: white;}
+    50% { transform: translate(-200px, 500px);background: blue;}
+    75% { transform: translate(-600px, -340px);background: orange;}
+    100% { transform: translate(0px, 0px);background: red;}
+}
+
+#button-49 {
+	width: 250px;
+	height: 250px;
+	background: pink;
+}
+
+.pong {
+	animation: ping 5s;
+	animation-iteration-count: infinite;
+	background: red;
+	color: white;
+	border-radius: 150px;
+}
+
+@keyframes ping {
+    0% { transform: translate(0px, 0px); width: 20px; height: 20px;}
+    50% { transform: translate(0px, 230px); width: 20px; height: 20px; }
+		100% { transform: translate(0px, 0px); width: 20px; height: 20px; }
+}
+
+.fin {
+	background: red;
+}

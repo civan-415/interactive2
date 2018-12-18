@@ -1,0 +1,131 @@
+body{
+height:3200px;
+	margin: 0;
+	font-family: Neue Haas Unica Pro Light;
+	src: url(assets\NeueHaasUnicaPro-Light.woff);
+
+}
+@font-face {
+    font-family: Neue Haas Unica Pro Light;
+    src: url(assets\NeueHaasUnicaPro-Light.woff);
+}
+h1{
+font-size: 1.4vw;
+	font-family: Neue Haas Unica Pro Regular;
+	src: url(assets\NeueHaasUnicaPro-Light.woff);
+}
+h2{
+	width: 33vw;
+	font-size: 1.1vw;
+	color:gray;
+	font-family: Neue Haas Unica Pro light;
+	src: url(assets\NeueHaasUnicaPro-Light.woff);
+}
+
+
+.about {
+    width: 33vw;
+    font-size: 1.1vw;
+    padding: .5in 0 0 1.5in;
+		pointer-events: none;
+font-family: Neue Haas Unica Pro Light;
+src: url(assets\NeueHaasUnicaPro-Light.woff);
+}
+
+
+.logo {
+    pointer-events: none;
+    width: 5vw;
+    font-size: 1.5vw;
+    padding: .5in 0 0 1.5in;
+
+    opacity: 1;
+}
+.torusimg{
+position: absolute;
+top:750px;
+	left:375px;
+
+}
+.trap{
+position: absolute;
+top:1100px;
+	left:1570px;
+
+}
+
+.dice{
+position: absolute;
+top:1650px;
+	left:125px;
+}
+.circles{
+position: absolute;
+top:1650px;
+	left:51%;
+}
+
+.target{
+position: absolute;
+top:2300px;
+	left:50%;
+}
+
+.image01{
+	position: absolute;
+	top:475px;
+		left:1200px;
+		width: 20vw;
+		font-size: 10px;
+		pointer-events: none;
+			color:gray;
+
+}
+
+.image02{
+	position: absolute;
+	top:1275px;
+		left:150px;
+		width: 20vw;
+		font-size: 10px;
+		pointer-events: none;
+			color:gray;
+}
+
+.image03{
+	position: absolute;
+	top:2300px;
+		left:150px;
+		width: 20vw;
+		font-size: 10px;
+		pointer-events: none;
+			color:gray;
+}
+
+
+
+
+#circle {
+   width: 100px;
+   height: 100px;
+   background: red;
+   border-radius: 50%;
+   position: absolute;
+   left:80%;
+ }
+ #circle2 {
+    width: 75px;
+    height: 75px;
+    background: blue;
+    border-radius: 50%;
+    position: absolute;
+    left:76%;
+  }
+
+	.instructions{
+	padding: 0in 0 0 1.5in;
+		width: 40vw;
+		font-size: .8vw;
+		color: gray;
+
+	}
